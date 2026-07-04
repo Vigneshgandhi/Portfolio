@@ -9,6 +9,7 @@ import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import Certifications from "./pages/Certificate";
+import Blogs from "./pages/blogs";
 import ProjectDetails from "./pages/ProjectDetails";
 
 const router = createBrowserRouter([
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
       {
         path:"/projects/:id",
         element:<ProjectDetails/>
+      },
+      {
+        path:"blogs",
+        element:<Blogs/>
       }
     ],
   },
@@ -49,3 +54,6 @@ function App() {
 }
 
 export default App;
+
+
+

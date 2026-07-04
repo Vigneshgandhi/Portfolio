@@ -66,7 +66,7 @@ const projects = [
 const [selectedProject, setSelectedProject] = useState(null);
 
 return ( 
-<section className="mx-auto min-h-[80vh] max-w-7xl px-6 py-16 text-slate-100">
+<section className="mx-auto min-h-[80vh] max-w-7xl bg-white px-6 py-16 text-[#1A1616]">
 
   <motion.div
     initial={{ opacity: 0, y: 40 }}
@@ -74,15 +74,15 @@ return (
     transition={{ duration: 0.6 }}
     className="mb-10 max-w-3xl"
   >
-    <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-cyan-300">
+    <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-[#D91A3A]">
       Selected Work
     </p>
 
-    <h1 className="text-4xl font-bold text-white sm:text-5xl">
+    <h1 className="text-4xl font-bold text-[#1A1616] sm:text-5xl">
       Projects
     </h1>
 
-    <p className="mt-4 text-lg leading-relaxed text-slate-400">
+    <p className="mt-4 text-lg leading-relaxed text-[#403939]">
       Showcasing my work in Artificial Intelligence,
       Cybersecurity, Big Data Analytics, and Full Stack
       Development.
@@ -105,14 +105,14 @@ return (
           y: -10,
           scale: 1.02,
         }}
-        className="rounded-2xl border border-slate-800 bg-slate-900/70 p-6 backdrop-blur-lg"
+        className="rounded-2xl border border-[#801426]/10 bg-white p-6 shadow-lg shadow-[#801426]/10 backdrop-blur-lg transition hover:border-[#D91A3A]/35"
       >
 
-        <h2 className="text-xl font-semibold text-white">
+        <h2 className="text-xl font-semibold text-[#1A1616]">
           {project.title}
         </h2>
 
-        <p className="mt-3 text-slate-400">
+        <p className="mt-3 text-[#403939]">
           {project.shortDescription}
         </p>
 
@@ -120,7 +120,7 @@ return (
           {project.tags.map((tag) => (
             <span
               key={tag}
-              className="rounded-full border border-cyan-400/20 bg-cyan-400/10 px-3 py-1 text-xs text-cyan-200"
+              className="rounded-full border border-[#801426]/10 bg-[#FCDF4C]/50 px-3 py-1 text-xs text-[#801426]"
             >
               {tag}
             </span>
@@ -129,7 +129,7 @@ return (
 
         <Link
           to={`/projects/${project.id}`}
-          className="mt-6 inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300"
+          className="mt-6 inline-flex items-center gap-2 font-semibold text-[#D91A3A] hover:text-[#801426]"
         >
           View Details
           <FaArrowRight />
@@ -148,32 +148,32 @@ return (
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
-        className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-6"
+        className="fixed inset-0 z-50 flex items-center justify-center bg-[#1A1616]/80 p-6"
       >
 
         <motion.div
           initial={{ scale: 0.8 }}
           animate={{ scale: 1 }}
           exit={{ scale: 0.8 }}
-          className="max-w-3xl w-full bg-slate-900 border border-slate-700 rounded-3xl p-8 relative"
+          className="relative w-full max-w-3xl rounded-3xl border border-[#801426]/10 bg-white p-8 shadow-2xl"
         >
 
           <button
             onClick={() => setSelectedProject(null)}
-            className="absolute right-6 top-6 text-slate-400 hover:text-white"
+            className="absolute right-6 top-6 text-[#403939] hover:text-[#D91A3A]"
           >
             <FaTimes size={22} />
           </button>
 
-          <h2 className="text-3xl font-bold text-white mb-6">
+          <h2 className="mb-6 text-3xl font-bold text-[#1A1616]">
             {selectedProject.title}
           </h2>
 
-          <p className="leading-8 text-slate-300">
+          <p className="leading-8 text-[#403939]">
             {selectedProject.description}
           </p>
 
-          <h3 className="mt-8 mb-4 text-xl font-semibold text-cyan-400">
+          <h3 className="mb-4 mt-8 text-xl font-semibold text-[#D91A3A]">
             Technologies Used
           </h3>
 
@@ -182,7 +182,7 @@ return (
             {selectedProject.technologies.map((tech) => (
               <span
                 key={tech}
-                className="rounded-full bg-slate-800 px-4 py-2"
+                className="rounded-full bg-[#FCDF4C]/45 px-4 py-2 text-[#801426]"
               >
                 {tech}
               </span>
@@ -201,3 +201,7 @@ return (
 </section>
 );
 }
+
+
+
+

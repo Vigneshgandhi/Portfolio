@@ -2,21 +2,11 @@ import {
   FaReact,
   FaNodeJs,
   FaPython,
-  FaJava,
   FaDatabase,
   FaPalette,
   FaShieldAlt,
 } from "react-icons/fa";
 import { motion } from "framer-motion";
-import {
-  SiNextdotjs,
-  SiMongodb,
-  SiTailwindcss,
-  SiAdobephotoshop,
-  SiAdobeillustrator,
-  SiApachehadoop,
-  SiApachespark,
-} from "react-icons/si";
 
 const skillCategories = [
   {
@@ -63,10 +53,10 @@ const skillCategories = [
 
 export default function Skills() {
   return (
-    <section className="max-w-7xl mx-auto px-6 py-10 text-white">
+    <section className="mx-auto max-w-7xl bg-white px-6 py-10 text-[#1A1616]">
 
       <div className="text-center mb-16">
-        <p className="uppercase tracking-widest text-cyan-400 font-semibold">
+        <p className="font-semibold uppercase tracking-widest text-[#D91A3A]">
           Expertise
         </p>
 
@@ -74,7 +64,7 @@ export default function Skills() {
           Technical Skills
         </h2>
 
-        <p className="text-slate-400 mt-4 max-w-2xl mx-auto">
+        <p className="mx-auto mt-4 max-w-2xl text-[#403939]">
           Technologies and tools that I use to design,
           develop, and deploy modern software solutions.
         </p>
@@ -95,14 +85,14 @@ export default function Skills() {
               y: -8,
               scale: 1.02,
             }}
-            className="bg-slate-900 border border-slate-800 rounded-3xl p-8"
+            className="rounded-3xl border border-[#801426]/10 bg-white p-8 shadow-lg shadow-[#801426]/10 transition hover:border-[#D91A3A]/30"
           >
 
-            <div className="text-cyan-400 mb-4">
+            <div className="mb-4 inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-[#FCDF4C] text-[#801426]">
               {category.icon}
             </div>
 
-            <h3 className="text-xl font-semibold mb-5">
+            <h3 className="mb-5 text-xl font-semibold text-[#1A1616]">
               {category.title}
             </h3>
 
@@ -111,7 +101,7 @@ export default function Skills() {
               {category.skills.map((skill) => (
                 <span
                   key={skill}
-                  className="px-3 py-2 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-200 text-sm"
+                  className="rounded-full border border-[#801426]/10 bg-[#403939]/5 px-3 py-2 text-sm text-[#403939] transition hover:border-[#D91A3A]/30 hover:bg-[#FCDF4C]/35"
                 >
                   {skill}
                 </span>
@@ -127,3 +117,6 @@ export default function Skills() {
     </section>
   );
 }
+
+
+

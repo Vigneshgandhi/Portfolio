@@ -38,20 +38,20 @@ const education = [
 
 export default function Education() {
   return (
-    <section className="max-w-7xl mx-auto px-6 py-24">
+    <section className="mx-auto max-w-7xl px-6 py-24">
 
       {/* Section Heading */}
       <div className="text-center mb-20">
 
-        <p className="uppercase tracking-widest text-cyan-400 font-semibold">
+        <p className="font-semibold uppercase tracking-widest text-[#D91A3A]">
           Academic Journey
         </p>
 
-        <h2 className="text-4xl md:text-5xl font-bold text-white mt-4">
+        <h2 className="mt-4 text-4xl font-bold text-[#1A1616] md:text-5xl">
           Education
         </h2>
 
-        <p className="text-slate-400 max-w-2xl mx-auto mt-5">
+        <p className="mx-auto mt-5 max-w-2xl text-[#403939]">
           My academic background and continuous pursuit of
           knowledge in computer science, software engineering,
           artificial intelligence, and emerging technologies.
@@ -64,7 +64,7 @@ export default function Education() {
       <div className="relative">
 
         {/* Vertical Line */}
-        <div className="absolute left-5 top-0 h-full w-1 bg-cyan-500/30"></div>
+        <div className="absolute left-5 top-0 h-full w-1 bg-[#D91A3A]/25"></div>
 
         <div className="space-y-12">
 
@@ -80,43 +80,43 @@ export default function Education() {
             >
 
               {/* Timeline Dot */}
-              <div className="absolute left-0 top-4 w-10 h-10 rounded-full bg-cyan-500 flex items-center justify-center">
+              <div className="absolute left-0 top-4 flex h-10 w-10 items-center justify-center rounded-full bg-[#D91A3A] shadow-lg shadow-[#D91A3A]/25">
                 <FaGraduationCap className="text-white" />
               </div>
 
               {/* Card */}
-              <div className="bg-slate-900 border border-slate-800 rounded-3xl p-8 hover:border-cyan-500/50 transition">
+              <div className="rounded-3xl border border-[#801426]/10 bg-white p-8 shadow-lg shadow-[#801426]/10 transition hover:border-[#D91A3A]/40">
 
                 <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-4">
 
                   <div>
-                    <h3 className="text-2xl font-bold text-white">
+                    <h3 className="text-2xl font-bold text-[#1A1616]">
                       {item.degree}
                     </h3>
 
-                    <p className="text-cyan-400 mt-1">
+                    <p className="mt-1 text-[#D91A3A]">
                       {item.specialization}
                     </p>
                   </div>
 
-                  <span className="px-4 py-2 rounded-full bg-cyan-500/10 text-cyan-300 border border-cyan-500/20 w-fit">
+                  <span className="w-fit rounded-full border border-[#801426]/10 bg-[#B0132D] px-4 py-2 text-[#FFFFFF]">
                     {item.period}
                   </span>
 
                 </div>
 
                 <div className="mt-6 flex items-center gap-3">
-                  <FaUniversity className="text-cyan-400" />
+                  <FaUniversity className="text-[#D91A3A]" />
 
-                  <p className="text-slate-300">
+                  <p className="text-[#403939]">
                     {item.institution}
                   </p>
                 </div>
 
                 <div className="grid sm:grid-cols-2 gap-4 mt-6">
 
-                  <div className="bg-slate-800 rounded-xl p-4">
-                    <p className="text-slate-400 text-sm">
+                  <div className="rounded-xl bg-[#403939]/5 p-4">
+                    <p className="text-sm text-[#403939]/80">
                       Academic Performance
                     </p>
 
@@ -125,8 +125,8 @@ export default function Education() {
                     </h4>
                   </div>
 
-                  <div className="bg-slate-800 rounded-xl p-4">
-                    <p className="text-slate-400 text-sm">
+                  <div className="rounded-xl bg-[#801426]/8 p-4">
+                    <p className="text-sm text-[#403939]/80">
                       Status
                     </p>
 
@@ -150,3 +150,6 @@ export default function Education() {
     </section>
   );
 }
+
+
+

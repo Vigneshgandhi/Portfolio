@@ -10,20 +10,21 @@ import {
 } from "react-icons/fa";
 import { Fragment } from "react";
 import Skills from "../components/Skill";
+import Proofofwork from "../components/Proofofwork";
 
 const Home = () => {
   return (
     <Fragment>
-    <section className="relative min-h-screen bg-slate-950 overflow-hidden text-white">
+    <section className="relative min-h-screen overflow-hidden bg-[#FFFFFF] text-[#1A1616]">
 
       {/* Animated Background */}
       <div className="absolute inset-0 overflow-hidden">
 
-        <div className="absolute top-10 left-10 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute -top-24 -left-24 h-[28rem] w-[28rem] rounded-full bg-[#FCDF4C]/35 blur-3xl animate-pulse"></div>
 
-        <div className="absolute bottom-10 right-10 w-[500px] h-[500px] bg-blue-600/10 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute -bottom-32 -right-24 h-[34rem] w-[34rem] rounded-full bg-[#D91A3A]/15 blur-3xl animate-pulse"></div>
 
-        <div className="absolute top-1/2 left-1/2 w-[400px] h-[400px] bg-purple-500/10 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
+        <div className="absolute left-1/2 top-1/2 h-[26rem] w-[26rem] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#801426]/10 blur-3xl"></div>
 
       </div>
 
@@ -39,18 +40,18 @@ const Home = () => {
             transition={{ duration: 0.8 }}
           >
 
-            <span className="inline-block px-5 py-2 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-400">
+            <span className="inline-block rounded-full border border-[#D91A3A]/20 bg-[#FCDF4C]/55 px-5 py-2 text-sm font-semibold text-[#801426] shadow-sm">
               Welcome To My Portfolio
             </span>
 
-            <h1 className="mt-3 py-5 text-5xl md:text-7xl font-extrabold leading-tight">
+            <h1 className="mt-3 py-7 mb-2 text-5xl md:text-7xl font-extrabold leading-tight">
               Hi, I'm
-              <span className="block bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 text-transparent bg-clip-text">
+              <span className="block bg-gradient-to-r from-[#D91A3A] via-[#D91A3A] to-[#FCDF4C] text-transparent bg-clip-text">
                 Vigneshgandhi
               </span>
             </h1>
 
-            <div className="mt-6 text-2xl md:text-3xl font-semibold text-slate-300">
+            <div className="mt-6 text-2xl md:text-3xl font-semibold text-[#403939]">
 
               <TypeAnimation
                 sequence={[
@@ -69,7 +70,7 @@ const Home = () => {
 
             </div>
 
-            <p className="mt-8 text-slate-400 text-lg leading-8 max-w-2xl">
+            <p className="mt-8 max-w-2xl text-lg leading-8 text-[#403939]">
               Passionate designer and curious learner about computer
               technology. I love designing web and mobile applications
               with a strong interest in building real-time software
@@ -80,7 +81,7 @@ const Home = () => {
 
             <div className="flex flex-wrap gap-4 mt-10">
 
-              <button className="group bg-cyan-500 hover:bg-cyan-600 px-8 py-4 rounded-xl font-semibold flex items-center gap-2 transition">
+              <button className="group flex items-center gap-2 rounded-xl bg-[#D91A3A] px-8 py-4 font-semibold text-white shadow-lg shadow-[#D91A3A]/25 transition hover:bg-[#801426]" onClick={(e)=>{window.location.href="/projects";e.PreventDefault()}}>
                 View Projects
                 <FaArrowRight className="group-hover:translate-x-1 transition" />
               </button>
@@ -94,7 +95,7 @@ const Home = () => {
                   link.click();
                   document.body.removeChild(link);
                 }}
-                className="px-8 py-4 border border-cyan-500 rounded-xl hover:bg-cyan-500 hover:text-black transition"
+                className="rounded-xl border border-[#801426]/25 bg-white px-8 py-4 font-semibold text-[#801426] shadow-sm transition hover:border-[#D91A3A] hover:bg-[#FCDF4C]"
               >
                 Download Resume
               </button>
@@ -107,14 +108,14 @@ const Home = () => {
 
               <a
                 href="https://www.github.com/vigneshgandhi"
-                className="w-12 h-12 rounded-full border border-slate-700 flex items-center justify-center hover:border-cyan-500 hover:text-cyan-400 transition"
+                className="flex h-12 w-12 items-center justify-center rounded-full border border-[#801426]/20 bg-white text-[#403939] shadow-sm transition hover:border-[#D91A3A] hover:bg-[#D91A3A] hover:text-white"
               >
                 <FaGithub />
               </a>
 
               <a
                 href="https://www.linkedin.com/in/vigneshgandhi-b-33000264/"
-                className="w-12 h-12 rounded-full border border-slate-700 flex items-center justify-center hover:border-cyan-500 hover:text-cyan-400 transition"
+                className="flex h-12 w-12 items-center justify-center rounded-full border border-[#801426]/20 bg-white text-[#403939] shadow-sm transition hover:border-[#D91A3A] hover:bg-[#D91A3A] hover:text-white"
               >
                 <FaLinkedin />
               </a>
@@ -135,7 +136,8 @@ const Home = () => {
             <div className="relative">
 
               {/* Glow */}
-              <div className="absolute inset-0 bg-cyan-500 rounded-full blur-3xl opacity-20 animate-pulse"></div>
+              <div className="absolute inset-0 rounded-full bg-[#D91A3A] opacity-20 blur-3xl animate-pulse"></div>
+              <div className="absolute -right-8 top-8 h-24 w-24 rounded-full bg-[#FCDF4C] opacity-80 blur-2xl"></div>
 
               {/* Image */}
               <motion.img
@@ -146,9 +148,9 @@ const Home = () => {
                   repeat: Infinity,
                   duration: 4,
                 }}
-                src="/profile.jpeg"
+                src="/TCSPHoto.jpg"
                 alt="Vignesh"
-                className="relative w-80 h-80 lg:w-[450px] lg:h-[450px] object-cover rounded-full border-4 border-cyan-400 shadow-2xl"
+                className="relative h-80 w-80 rounded-full border-4 border-[#FCDF4C] object-cover shadow-2xl shadow-[#801426]/25 lg:h-[450px] lg:w-[450px]"
               />
 
               {/* Floating Tags */}
@@ -156,27 +158,27 @@ const Home = () => {
               <motion.div
                 animate={{ y: [0, -10, 0] }}
                 transition={{ repeat: Infinity, duration: 3 }}
-                className="absolute top-10 -left-10 bg-slate-900 border border-slate-700 px-4 py-3 rounded-xl"
+                className="absolute -left-10 top-10 rounded-xl border border-[#FCDF4C]/60 bg-[#1A1616] px-4 py-3 text-white shadow-xl shadow-[#801426]/20"
               >
-                <FaCode className="inline mr-2 text-cyan-400" />
+                <FaCode className="mr-2 inline text-[#FCDF4C]" />
                 React.js
               </motion.div>
 
               <motion.div
                 animate={{ y: [0, 10, 0] }}
                 transition={{ repeat: Infinity, duration: 3 }}
-                className="absolute bottom-20 -right-10 bg-slate-900 border border-slate-700 px-4 py-3 rounded-xl"
+                className="absolute -right-10 bottom-20 rounded-xl border border-[#D91A3A]/20 bg-[#1A1616] px-4 py-3 text-white shadow-xl shadow-[#801426]/15"
               >
-                <FaShieldAlt className="inline mr-2 text-cyan-400" />
+                <FaShieldAlt className="mr-2 inline text-[#FCDF4C]" />
                 Security
               </motion.div>
 
               <motion.div
                 animate={{ y: [0, -12, 0] }}
                 transition={{ repeat: Infinity, duration: 4 }}
-                className="absolute bottom-0 left-0 bg-slate-900 border border-slate-700 px-4 py-3 rounded-xl"
+                className="absolute bottom-0 left-0 rounded-xl border border-[#801426]/15 bg-[#1A1616] px-4 py-3 text-white shadow-xl shadow-[#801426]/15"
               >
-                <FaLaptopCode className="inline mr-2 text-cyan-400" />
+                <FaLaptopCode className="mr-2 inline text-[#FCDF4C]" />
                 Full Stack
               </motion.div>
 
@@ -190,24 +192,24 @@ const Home = () => {
 
         <div className="grid md:grid-cols-4 gap-6 pb-20">
 
-          <div className="bg-slate-900/60 backdrop-blur border border-slate-800 p-8 rounded-3xl text-center">
-            <h3 className="text-4xl font-bold text-cyan-400">7.71</h3>
-            <p className="text-slate-400 mt-2">CGPA</p>
+          <div className="rounded-3xl border border-[#801426]/10 bg-white p-8 text-center shadow-lg shadow-[#801426]/10 backdrop-blur">
+            <h3 className="text-4xl font-bold text-[#D91A3A]">7.71</h3>
+            <p className="mt-2 text-[#403939]">CGPA</p>
           </div>
 
-          <div className="bg-slate-900/60 backdrop-blur border border-slate-800 p-8 rounded-3xl text-center">
-            <h3 className="text-4xl font-bold text-cyan-400">M.E</h3>
-            <p className="text-slate-400 mt-2">Degree</p>
+          <div className="rounded-3xl border border-[#801426]/10 bg-white p-8 text-center text-white shadow-lg shadow-[#801426]/15 backdrop-blur">
+            <h3 className="text-4xl font-bold text-[#D91A3A]">M.E</h3>
+            <p className="mt-2 text-[#403939]">Degree</p>
           </div>
 
-          <div className="bg-slate-900/60 backdrop-blur border border-slate-800 p-8 rounded-3xl text-center">
-            <h3 className="text-4xl font-bold text-cyan-400">2027</h3>
-            <p className="text-slate-400 mt-2">Graduation</p>
+          <div className="rounded-3xl border border-[#801426]/10 bg-white p-8 text-center shadow-lg shadow-[#801426]/15 backdrop-blur">
+            <h3 className="text-4xl font-bold text-[#D91A3A]">2027</h3>
+            <p className="mt-2 text-[#403939]">Graduation</p>
           </div>
 
-          <div className="bg-slate-900/60 backdrop-blur border border-slate-800 p-8 rounded-3xl text-center">
-            <h3 className="text-4xl font-bold text-cyan-400">5+</h3>
-            <p className="text-slate-400 mt-2">Career Paths</p>
+          <div className="rounded-3xl border border-[#D91A3A]/10 bg-white p-8 text-center text-white shadow-lg shadow-[#801426]/15 backdrop-blur">
+            <h3 className="text-4xl font-bold text-[#D91A3A]">5+</h3>
+            <p className="mt-2 text-[#403939]">Career Paths</p>
           </div>
 
         </div>
@@ -216,8 +218,12 @@ const Home = () => {
 
     </section>
     <Skills/>
+    <Proofofwork/>
     </Fragment>
   );
 };
 
 export default Home;
+
+
+

@@ -55,13 +55,13 @@ const Home = () => {
 
               <TypeAnimation
                 sequence={[
-                  "Full Stack Developer",
+                  "I am a Full Stack Developer",
                   1500,
-                  "AI Enthusiast",
+                  "I am an AI Enthusiast",
                   1500,
-                  "Cybersecurity Learner",
+                  "I am a Cybersecurity Learner",
                   1500,
-                  "UI/UX Designer",
+                  "I am an UI/UX Designer",
                   1500,
                 ]}
                 speed={50}
@@ -224,6 +224,3 @@ const Home = () => {
 };
 
 export default Home;
-
-
-

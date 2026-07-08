@@ -13,11 +13,11 @@ const proofItems = [
   {
     id: 1,
     category: "Adobe XD",
-    title: "Portfolio Landing Wireframe",
+    title: "Personal Portfolio UI Design",
     description:
-      "Landing page concept created in Adobe XD with a clear hero section, navigation flow, and polished first impression.",
-    imgSrc: "../../Screenshot-1.png",
-    tags: ["UI Design", "Wireframe", "Hero"],
+      "Designed a modern and minimal portfolio interface in Adobe XD featuring responsive layouts, hero sections, portfolio showcases, navigation flow, and call-to-action components following UI/UX best practices.",
+    imgSrc: "../../Screenshot-6.png",
+    tags: ["Adobe XD", "UI/UX", "Prototype"],
   },
   {
     id: 2,
@@ -25,7 +25,7 @@ const proofItems = [
     title: "Mobile App Onboarding",
     description:
       "Mobile onboarding screens planned with reusable components, simple content hierarchy, and smooth user entry flow.",
-    imgSrc: "../../Screenshot-1.png",
+    imgSrc: "../../Screenshot-2.png",
     tags: ["Mobile UI", "Prototype", "UX"],
   },
   {
@@ -58,11 +58,11 @@ const proofItems = [
   {
     id: 6,
     category: "Full Stack",
-    title: "Project Detail Page",
+    title: "TVK Governance Tracker",
     description:
-      "Detailed project page presenting features, timeline, technology stack, and final delivery information.",
-    imgSrc: "../../Screenshot-1.png",
-    tags: ["Frontend", "Content", "Layout"],
+      "A full-stack governance monitoring platform that tracks manifesto promises, minister performance, government schemes, assembly activities, and public accountability with an interactive dashboard and analytics.",
+    imgSrc: "../../Screenshot-5.png",
+    tags: ["Next.js", "Node.js", "MongoDB", "Tailwind CSS"],
   },
   {
     id: 7,
@@ -70,7 +70,7 @@ const proofItems = [
     title: "CRUD Management View",
     description:
       "Management screen designed for creating, reading, updating, and deleting data with clear controls.",
-    imgSrc: "../../Screenshot-1.png",
+    imgSrc: "../../Screenshot-4.png",
     tags: ["CRUD", "Node.js", "MongoDB"],
   },
   {
@@ -156,12 +156,12 @@ const proofItems = [
   },
   {
     id: 17,
-    category: "Mixed Work",
-    title: "Final Portfolio Showcase",
+    category: "AI & Full Stack",
+    title: "Affiliate PPC Fraud Detection Platform",
     description:
-      "Combined proof-of-work screen showing development, Adobe XD, Illustrator, and InDesign outcomes together.",
+      "An AI-powered affiliate marketing platform that detects click fraud, monitors conversion quality, analyzes promoter performance, and provides real-time dashboards for secure Pay-Per-Click (PPC) campaign management.",
     imgSrc: "../../Screenshot-1.png",
-    tags: ["Portfolio", "Showcase", "Review"],
+    tags: ["React", "Node.js", "MongoDB", "Machine Learning"],
   },
 ];
 
@@ -355,8 +355,3 @@ export default function Proofofwork() {
     </section>
   );
 }
-
-
-
-
-
